@@ -8,6 +8,9 @@ This repository contains code for facial recognition using openCV and python wit
 -tkinter GUI interface
 
 Here I am working on Face recognition based Attendance Management System by using OpenCV(Python). One can mark thier attendance by simply facing the camera. 
+## Intuition:
+Here we apply LHBP(linear histograms binary patterns ) algorithm for facial recognition since its very effective and light invariance algorithm. 
+Using opencv, we can implement LHBP algorithm with ease
 
 ## How it works :
 
