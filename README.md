@@ -94,8 +94,7 @@ Idea is to not look at the image as a whole instead find the local features of a
 
 Now you get why this algorithm has Local Binary Patterns in its name? Because you get a list of local binary patterns. Now you may be wondering, what about the histogram part of the LBPH? Well after you get a list of local binary patterns, you convert each binary pattern into a decimal number (as shown in above image) and then you make a [histogram](https://www.mathsisfun.com/data/histograms.html) of all of those values. A sample histogram looks like this. 
 
-**Sample Histogram**
-![a3](https://user-images.githubusercontent.com/39909903/91155144-47e66680-e677-11ea-8302-762f736725c0.png)
+
 
 
 I guess this answers the question about histogram part. So in the end you will have **one histogram for each face** image in the training data set. That means if there were 100 images in training data set then LBPH will extract 100 histograms after training and store them for later recognition. Remember, **algorithm also keeps track of which histogram belongs to which person**.
@@ -115,7 +114,7 @@ Later during recognition, when you will feed a new image to the recognizer for r
 * As we have an image in grayscale, each histogram (from each grid) will contain only 256 positions (0~255) representing the occurrences of each pixel intensity.
 * Then, we need to concatenate each histogram to create a new and bigger histogram. Supposing we have 8×8 grids, we will have 8x8x256=16.384 positions in the final histogram. * The final histogram represents the characteristics of the image original image.
 
-![a34](https://user-images.githubusercontent.com/39909903/91155155-4c128400-e677-11ea-9add-343a0fc09a72.gif)
+![a3](https://user-images.githubusercontent.com/39909903/91155144-47e66680-e677-11ea-8302-762f736725c0.png)
 
 Face images are compared by converting both into LBPH vectors and then calculating the distance between two histograms, for example: euclidean distance, chi-square, absolute value, etc.  For ex, Euclidean distance can be calculated based on the following formula:
 ![a34](https://user-images.githubusercontent.com/39909903/91155155-4c128400-e677-11ea-9add-343a0fc09a72.gif)
@@ -151,7 +150,8 @@ This repository contains code for facial recognition using openCV and python wit
 
 Here I am working on Face recognition based Attendance Management System by using OpenCV(Python). One can mark thier attendance by simply facing the camera. 
 ## Attendance based on Face recognition:
-Block diagram or work flow  of this project may seem like this
+**Block diagram or work flow  of this project may seem like this**
+
 ![a7](https://user-images.githubusercontent.com/39909903/91155278-79f7c880-e677-11ea-8230-0a36dd95c8cb.gif)
 we train the algorthms with all the faces and compute their values  in the database. When we track images, we detect faces and apply some image preprocessing techniques and feed this to algorthm then algorthm will compute the value of that faces and checks whether the face is present in face database or not. If presents, grant attendance in excel sheet.
 
@@ -163,7 +163,7 @@ we train the algorthms with all the faces and compute their values  in the datab
  - Enter ID, Name -> input_forms
  - Notification, Attendace
  
- ![a2](https://user-images.githubusercontent.com/39909903/91154403-597b3e80-e676-11ea-8fa3-0c6e4f0861b9.png)
+![image](https://user-images.githubusercontent.com/39909903/91154919-f76f0900-e676-11ea-93b3-4956cc34f5c8.png)
 
 
 
