@@ -38,7 +38,7 @@ We have got three face recognizers but do you know which one to use and when? Or
 
 ------------------------
 
-### EigenFaces Face Recognizer
+### 1. EigenFaces Face Recognizer
 
 This algorithm considers the fact that not all parts of a face are equally important and equally useful. When you look at some one you recognize him/her by his distinct features like eyes, nose, cheeks, forehead and how they vary with respect to each other. So you are actually focusing on the areas of maximum change (mathematically speaking, this change is variance) of the face. For example, from eyes to nose there is a significant change and same is the case from nose to mouth. When you look at multiple faces you compare them by looking at these parts of the faces because these parts are the most useful and important components of a face. Important because they catch the maximum change among faces, change the helps you differentiate one face from the other. This is exactly how EigenFaces face recognizer works.  
 
@@ -63,7 +63,7 @@ Easy peasy, right? Next one is easier than this one.
 
 ----------------------
 
-### FisherFaces Face Recognizer 
+### 2. FisherFaces Face Recognizer 
 
 This algorithm is an improved version of EigenFaces face recognizer. Eigenfaces face recognizer looks at all the training faces of all the persons at once and finds principal components from all of them combined. By capturing principal components from all the of them combined you are not focusing on the features that discriminate one person from the other but the features that represent all the persons in the training data as a whole.
 
@@ -86,7 +86,7 @@ Getting bored with this theory? Don't worry, only one face recognizer is left an
 
 -----------------------------
 
-### Local Binary Patterns Histograms (LBPH) Face Recognizer 
+### 3. Local Binary Patterns Histograms (LBPH) Face Recognizer 
 
 
 
