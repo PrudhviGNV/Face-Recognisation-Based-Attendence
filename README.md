@@ -36,6 +36,8 @@ OpenCV has three built in face recognizers and thanks to OpenCV's clean coding, 
 
 We have got three face recognizers but do you know which one to use and when? Or which one is better? I guess not. So why not go through a brief summary of each, what you say? I am assuming you said yes :) So let's dive into the theory of each. 
 
+------------------------
+
 ### EigenFaces Face Recognizer
 
 This algorithm considers the fact that not all parts of a face are equally important and equally useful. When you look at some one you recognize him/her by his distinct features like eyes, nose, cheeks, forehead and how they vary with respect to each other. So you are actually focusing on the areas of maximum change (mathematically speaking, this change is variance) of the face. For example, from eyes to nose there is a significant change and same is the case from nose to mouth. When you look at multiple faces you compare them by looking at these parts of the faces because these parts are the most useful and important components of a face. Important because they catch the maximum change among faces, change the helps you differentiate one face from the other. This is exactly how EigenFaces face recognizer works.  
@@ -57,7 +59,9 @@ Later during recognition, when you feed a new image to the algorithm, it repeats
 3. The feature extractor must be retrained if large number of new faces are added to the system
 4. It is not accurate enough by itself and needs boosting methods for improvement.
 
-Easy peasy, right? Next one is easier than this one. 
+Easy peasy, right? Next one is easier than this one.
+
+----------------------
 
 ### FisherFaces Face Recognizer 
 
@@ -79,6 +83,8 @@ One thing to note here is that **even in Fisherfaces algorithm if multiple perso
 Fischerfaces yields much better recognition performance than eigen faces.  However, it loses the ability to reconstruct faces because the Eigenspace is lost.  Also, Fischer faces greatly reduces the dimensionality of the images making small template sizes.
 
 Getting bored with this theory? Don't worry, only one face recognizer is left and then we will dive deep into the coding part. 
+
+-----------------------------
 
 ### Local Binary Patterns Histograms (LBPH) Face Recognizer 
 
@@ -130,6 +136,8 @@ Face images are compared by converting both into LBPH vectors and then calculati
 
 The theory part is over and now comes the coding part! Ready to dive into coding? Let's get into it then. 
 
+-----------------------
+
 # Coding Face Recognition with OpenCV
 
 The Face Recognition process in this tutorial is divided into three steps.
@@ -139,6 +147,7 @@ The Face Recognition process in this tutorial is divided into three steps.
 3. **Testing:** In this step we will pass some test images to face recognizer and see if it predicts them correctly.
 
 This repository contains code for facial recognition using openCV and python with a tkinter gui interface. If you want to test the code then run train.py file
+---------------
 
 ## Technology used :
 - openCV (Opensource Computer Vision)
@@ -149,6 +158,7 @@ This repository contains code for facial recognition using openCV and python wit
 
 
 Here I am working on Face recognition based Attendance Management System by using OpenCV(Python). One can mark thier attendance by simply facing the camera. 
+------------------------
 ## Attendance based on Face recognition:
 **Block diagram or work flow  of this project may seem like this**
 
@@ -168,7 +178,7 @@ we train the algorthms with all the faces and compute their values  in the datab
 
 
 
-
+------------------------
 
 ## Usage :
 
@@ -187,9 +197,19 @@ Finally print results in excelsheet.
 -------
 
 wohooo! Is'nt it beautiful? Indeed, it is! 
+--------------------------
 
 ## End Notes
 
 Face Recognition is a fascinating idea to work on and OpenCV has made it extremely simple and easy for us to code it. It just takes a few lines of code to have a fully working face recognition application and we can switch between all three face recognizers with a single line of code change. It's that simple. 
 
 Although EigenFaces, FisherFaces and LBPH face recognizers are good but there are even better ways to perform face recognition like using Histogram of Oriented Gradients (HOGs) and Neural Networks. So the more advanced face recognition algorithms are now a days implemented using a combination of OpenCV and Machine learning.
+
+
+-----------
+## Author : [Prudhvi GNV](https://prudhvignv.github.io)
+
+----------
+## Licence:
+[MIT](LICENCE.md)
+
