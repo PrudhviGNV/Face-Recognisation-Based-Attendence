@@ -7,12 +7,7 @@
  - **face recognition** : Includes taking images, training images to algorithm, track images --> using OpenCV
  - **User interface** : Includes GUI components such as buttons like take images, train images, track images, form input components like enter ID, NAME; Notification and attendance --> using tkinter 
  - **Backend functionalities** : Includes using Database(secondary storage here), file manipulation using OS,printing attendance in excel sheet.
- Here we design an interface using tkinter module which consists of following components:
- - Take images
- - Train images
- - Track images
- - Enter ID, Name -> input_forms
- - Notification, Attendace
+
  So let's drive into it..
 
 
@@ -27,7 +22,9 @@ OpenCV is a game changer in this AI world . It advances and automates many tasks
 OpenCV comes equipped with built in face recognizer, all you have to do is feed it the face data. It's that simple and this how it will look once we are done coding it.
 
 
-## OpenCV Face Recognizers
+## OpenCV Face Recognizers:
+Face recognition is trending nowadays for authentication and verification tasks .
+![a8](https://user-images.githubusercontent.com/39909903/91155351-93007980-e677-11ea-900a-f6d90887f950.jpeg)
 
 OpenCV has three built in face recognizers and thanks to OpenCV's clean coding, you can use any of them by just changing a single line of code. Below are the names of those face recognizers and their OpenCV calls. 
 
@@ -145,14 +142,32 @@ The Face Recognition process in this tutorial is divided into three steps.
 This repository contains code for facial recognition using openCV and python with a tkinter gui interface. If you want to test the code then run train.py file
 
 ## Technology used :
--openCV (Opensource Computer Vision)
--Python
--tkinter GUI interface
+- openCV (Opensource Computer Vision)
+- Python
+- tkinter GUI interface
 - OS
 - datetime
 
 
 Here I am working on Face recognition based Attendance Management System by using OpenCV(Python). One can mark thier attendance by simply facing the camera. 
+## Attendance based on Face recognition:
+Block diagram or work flow  of this project may seem like this
+![a7](https://user-images.githubusercontent.com/39909903/91155278-79f7c880-e677-11ea-8230-0a36dd95c8cb.gif)
+we train the algorthms with all the faces and compute their values  in the database. When we track images, we detect faces and apply some image preprocessing techniques and feed this to algorthm then algorthm will compute the value of that faces and checks whether the face is present in face database or not. If presents, grant attendance in excel sheet.
+
+## User Interface:
+ Here we design an interface using tkinter module which consists of following components:
+ - Take images
+ - Train images
+ - Track images
+ - Enter ID, Name -> input_forms
+ - Notification, Attendace
+ 
+ ![a2](https://user-images.githubusercontent.com/39909903/91154403-597b3e80-e676-11ea-8fa3-0c6e4f0861b9.png)
+
+
+
+
 
 
 ## Usage :
@@ -162,6 +177,13 @@ When we run train.py a window is opened and ask for Enter Id and Enter Name. Aft
 After taking image sample we have to click Train Image button.Now it take few seconds to train machine for the images that are taken by clicking Take Image button and creates a Trainner.yml file and store in TrainingImageLabel folder.
 
 Now all initial setups are done. By clicking Track Image button camera of running machine is opened again. If face is recognised by system then Id and Name of person is shown on Image. Press Q(or q) for quit this window.After quitting it attendance of person will be stored in Attendance folder as csv file with name, id, date and time and it is also available in window.
+
+Finally print results in excelsheet.
+
+
+
+
+![a7](https://user-images.githubusercontent.com/39909903/91155359-95fb6a00-e677-11ea-92a2-dd24f8d33b06.jpeg)
 -------
 
 wohooo! Is'nt it beautiful? Indeed, it is! 
