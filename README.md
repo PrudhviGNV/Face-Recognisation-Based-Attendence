@@ -211,5 +211,5 @@ Although EigenFaces, FisherFaces and LBPH face recognizers are good but there ar
 
 ----------
 ## Licence:
-[MIT](LICENSE.md)
-
+[MIT](
+https://github.com/PrudhviGNV/FaceRecognisationBasedAttendence/LICENSE)
