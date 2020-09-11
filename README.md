@@ -1,5 +1,9 @@
 # face Recognition Based Attendence
  - ###### An OpenCV project 
+ <br>
+ 
+ [![LICENCE.md](https://img.shields.io/github/license/PrudhviGNV/py-automl)](https://github.com/PrudhviGNV/py-automl/blob/master/LICENCE.md)[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/PrudhviGNV)[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/PrudhviGNV/open-source-badges/)
+[![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/PrudhviGNV/badges)<br>
  
  ## Overview :
  The idea of this project is to automate the manual work of taking attendance using face recognition techology. We can implement face recognition algorithms with ease using OpenCV. 
@@ -213,3 +217,8 @@ Although EigenFaces, FisherFaces and LBPH face recognizers are good but there ar
 ## Licence:
 [MIT](
 https://github.com/PrudhviGNV/FaceRecognisationBasedAttendence/LICENSE)
+
+--------
+## Contact:
+<a href="https://www.linkedin.com/in/prudhvignv"><img src="https://github.com/PrudhviGNV/PrudhviGNV/blob/master/logos/linkedin.png" width="40" /> </a>  <a href="https://github.com/PrudhviGNV"><img src="https://github.com/PrudhviGNV/PrudhviGNV/blob/master/logos/github-logo.png" width="40" /> </a>  <a href="https://www.facebook.com/prudhvi.gnv/"><img src="https://github.com/PrudhviGNV/PrudhviGNV/blob/master/logos/facebook.png" width="40" /> </a>  <a href="mailto:prudhvi.gnv@gmail.com"><img src="https://github.com/PrudhviGNV/PrudhviGNV/blob/master/logos/google-plus.png" width="40" /> </a>  <a
+ href="https://www.instagram.com/prudhvi_gnv"><img src="https://github.com/PrudhviGNV/PrudhviGNV/blob/master/logos/instagram.png" width="40" /> </a><a href="https://prudhvignv.github.io"><img src="https://github.com/PrudhviGNV/PrudhviGNV/blob/master/logos/home.png" width="40" /></a>
